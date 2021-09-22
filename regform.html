@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise #3 - Registration Form</title>
+  <head>
+    <style>
+      td{
+        padding:5px;
+      }
+      tr{
+        text-align:right;
+      }
+      .left{
+        text-align:left;
+      }
+      label{
+        width:20px;
+      }
+      
+      .firstd{
+        width:105px;
+      }
+      fieldset{
+        min-width:300px;
+      }
+      button{
+        margin-top:20px;
+      }
+      legend{
+        text-align: left;
+      } 
+    </style>
+  </head>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <div>
+  <form style="width:25%;margin:auto;text-align: center;min-width: 350px;">
+  <fieldset style="background-color:rgb(245, 245, 208);">
+    <legend>Personal details</legend>
+    <table>
+      <tr>
+        <td class="firstd"><label>First name</label></td>
+        <td ><input type="text"></td>
+      </tr>
+      <tr>
+        <td class="firstd"><label>Last name</label></td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td class="firstd"><label>Email Address</label></td>
+        <td><input type="email"></td>
+      </tr>
+      <tr>
+        <td class="firstd"><label>Gender</label></td>
+        <td class="left"><input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female</td>
+      </tr>
+    </table>
+  </fieldset>
+  <fieldset style="background-color:rgb(245, 245, 208">
+    <legend>City</legend>
+    <table>
+      <tr>
+        <td class="firstd"><label for="city">City</label></td>
+        <td><select id="city" name="city">
+            <option value="amman">Amman</option>
+            <option value="zarqa">Zarqa</option>
+            <option value="jerash">Jerash</option>
+            <option value="irbid">Irbid</option>
+          </select></td>
+      </tr>
+    </table>
+  </fieldset>
+  <button>Subscribe</button>
+</form>
+</div>
+
+</body>
+</html>
